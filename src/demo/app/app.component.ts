@@ -7,7 +7,7 @@ import { AvamLayoutService } from 'avam-gui-layout';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  meaning: number;
+  meaning: string;
   constructor(layoutService: AvamLayoutService) {
     this.meaning = layoutService.getName();
     console.log(this.meaning);
