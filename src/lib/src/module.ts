@@ -1,11 +1,29 @@
 import { NgModule } from '@angular/core';
+import { CommonModule } from "@angular/common";
+import { 
+  AvamGuiLayoutComponent, 
+  LayoutHeaderComponent,
+  LayoutBodyComponent,
+  LayoutFooterComponent,
+  AvamLayoutService
+} from "./index";
 
-import { LibComponent } from './component/lib.component';
-import { LibService } from './service/lib.service';
 
 @NgModule({
-  declarations: [LibComponent],
-  providers: [LibService],
-  exports: [LibComponent]
+  imports : [
+    CommonModule
+  ],
+  declarations: [
+    AvamGuiLayoutComponent,
+    LayoutHeaderComponent,
+    LayoutBodyComponent,
+    LayoutFooterComponent
+  ],
+  providers: [
+    AvamLayoutService
+  ],
+  exports: [
+    AvamGuiLayoutComponent
+  ]
 })
-export class LibModule { }
+export class AVAMGuiLayoutModule { }
