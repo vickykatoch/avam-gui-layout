@@ -1,10 +1,4 @@
-# Warning
-
-This quickstart is under active development and hasn't yet reached its final form.
-
-It may not be fully compatible with current versions of Angular.
-
-# Angular QuickStart Lib
+# AVAM GUI LAYOUT
 [![Build Status][travis-badge]][travis-badge-url]
 
 This is a simple library quickstart for Angular libraries, implementing the
