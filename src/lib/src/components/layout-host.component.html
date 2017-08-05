@@ -1,3 +1,8 @@
-<layout-header></layout-header>
-<layout-body></layout-body>
-<layout-footer></layout-footer>
+<layout-header *ngTemplateOutlet="headerTemplate">
+</layout-header>
+<layout-body [layoutType]="layoutType">
+
+</layout-body>
+<layout-footer>
+
+</layout-footer>

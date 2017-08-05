@@ -1,1 +1,14 @@
-<h1>Layout Body</h1>
+<ng-template #glLayout>
+    <gl-content-layout></gl-content-layout>
+</ng-template>
+<ng-template #gsLayout>
+    <gs-content-layout></gs-content-layout>
+</ng-template>
+
+<ng-template #vnLayout>
+    <vn-content-layout></vn-content-layout>
+</ng-template>
+
+<ng-container *ngTemplateOutlet="getLayoutTemplate()">
+
+</ng-container>

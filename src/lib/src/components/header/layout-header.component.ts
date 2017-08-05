@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, TemplateRef } from '@angular/core';
 
 @Component({
   selector: 'layout-header',
@@ -6,6 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./layout-header.component.css']
 })
 export class LayoutHeaderComponent {
-  
+    @Input()
+    htemplate : TemplateRef<any>;
     
+
 }

@@ -5,7 +5,10 @@ import {
   LayoutHeaderComponent,
   LayoutBodyComponent,
   LayoutFooterComponent,
-  AvamLayoutService
+  AvamLayoutService,
+  GoldenContentLayoutComponent,
+  GridsterContentLayoutComponent,
+  VanillaContentLayoutComponent
 } from "./index";
 
 
@@ -17,7 +20,10 @@ import {
     AvamGuiLayoutComponent,
     LayoutHeaderComponent,
     LayoutBodyComponent,
-    LayoutFooterComponent
+    LayoutFooterComponent,
+    GoldenContentLayoutComponent,
+    GridsterContentLayoutComponent,
+    VanillaContentLayoutComponent
   ],
   providers: [
     AvamLayoutService
