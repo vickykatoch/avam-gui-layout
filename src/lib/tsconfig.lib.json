@@ -18,5 +18,8 @@
     "flatModuleOutFile": "avam-gui-layout.js",
     "flatModuleId": "avam-gui-layout",
     "genDir": "../../out-tsc/lib-gen-dir/"
-  }
+  },
+  "exclude": [
+    "node_modules"
+  ]
 }

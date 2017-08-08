@@ -7,7 +7,7 @@ import { AvamLayoutService } from 'avam-gui-layout';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  layoutType = 'GRIDSTER';
+  layoutType = 'GOLDEN';
 
 
   constructor(layoutService: AvamLayoutService) {

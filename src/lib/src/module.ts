@@ -1,12 +1,12 @@
-import { NgModule } from '@angular/core';
+import { NgModule, ModuleWithProviders } from '@angular/core';
 import { CommonModule } from "@angular/common";
 import { 
-  AvamGuiLayoutComponent, 
+  AvamGoldenContentLayoutModule, 
+  DefaultGoldenLayoutConfig,
   LayoutHeaderComponent,
   LayoutBodyComponent,
   LayoutFooterComponent,
   AvamLayoutService,
-  GoldenContentLayoutComponent,
   GridsterContentLayoutComponent,
   VanillaContentLayoutComponent
 } from "./index";
@@ -14,14 +14,13 @@ import {
 
 @NgModule({
   imports : [
-    CommonModule
+    CommonModule,
+    AvamGoldenContentLayoutModule.forRoot(DefaultGoldenLayoutConfig),
   ],
   declarations: [
-    AvamGuiLayoutComponent,
     LayoutHeaderComponent,
     LayoutBodyComponent,
     LayoutFooterComponent,
-    GoldenContentLayoutComponent,
     GridsterContentLayoutComponent,
     VanillaContentLayoutComponent
   ],
@@ -29,7 +28,8 @@ import {
     AvamLayoutService
   ],
   exports: [
-    AvamGuiLayoutComponent
   ]
 })
-export class AVAMGuiLayoutModule { }
+export class AVAMGuiLayoutModule { 
+    
+}
